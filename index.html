@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاتحاد العام للطلاب الموريتانيين قسم المدرسة الوطنية العليا لعلوم الصحة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>الاتحاد العام للطلاب الموريتانيين قسم المدرسة الوطنية العليا لعلوم الصحة</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>نموذج تسجيل العضو</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="fullName">الاسم الكامل:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="الاسم الكامل" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="profilePicture">صورة شخصية:</label>
+                    <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">رقم الهاتف:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="رقم الهاتف" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">الجنس:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="ذكر">ذكر</option>
+                        <option value="أنثى">أنثى</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="yearOfStudy">السنة الدراسية:</label>
+                    <select id="yearOfStudy" name="yearOfStudy" required>
+                        <option value="L1">L1</option>
+                        <option value="L2">L2</option>
+                        <option value="L3">L3</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="specialty">التخصص:</label>
+                    <select id="specialty" name="specialty" required>
+                        <option value="TC">TC</option>
+                        <option value="SI">SI</option>
+                        <option value="SM">SM</option>
+                        <option value="A&R">A&R</option>
+                        <option value="Kiné">Kiné</option>
+                        <option value="IM">IM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="studyLanguage">لغة الدراسة:</label>
+                    <select id="studyLanguage" name="studyLanguage" required>
+                        <option value="العربية">العربية</option>
+                        <option value="ثنائية اللغة">ثنائية اللغة</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="membershipCard">صورة من بطاقة العضوية:</label>
+                    <input type="file" id="membershipCard" name="membershipCard" accept="image/*" required>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="loyalty" name="loyalty" required>
+                        أقر على إخلاصي التام للاتحاد العام للطلاب الموريتانيين واستعدادي الكامل لخدمته في أي شيء يُطلب مني.
+                    </label>
+                </div>
+
+                <button type="submit">تسجيل</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 الاتحاد العام للطلاب الموريتانيين</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
